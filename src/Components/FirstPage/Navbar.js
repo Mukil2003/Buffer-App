@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import Btn from "./Btn";
 import DropDown from "./DropDown";
 import DropDown2 from "./DropDown2";
+import Btn from "../Btn";
 
 let dropDown1 = [
   {
@@ -68,6 +68,14 @@ let dropDown2 = [
   },
 ];
 
+let btnStyle = {
+  backgroundColor: "#6B81FF",
+  name: "Get started now",
+  color: "#fff",
+  padding: "15px 30px",
+  fontSize: "15px",
+};
+
 function Navbar() {
   let [isActive, setIsActive] = useState(false);
   let [isActive2, setIsActive2] = useState(false);
@@ -129,7 +137,7 @@ function Navbar() {
 
         <div className="login">
           <a href="www.google.com">Log In</a>
-          <Btn name="Get started now" bgc="#1F35B3" />
+          <Btn contents={btnStyle} className="btn" />
         </div>
       </div>
     </div>

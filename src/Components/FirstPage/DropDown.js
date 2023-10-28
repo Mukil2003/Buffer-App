@@ -4,7 +4,7 @@ import "./Navbar.css";
 let dropdown = {
   display: "flex",
   flexDirection: "row",
-  padding: "20px 10px",
+  padding: "10px",
   fontFamily: "Poppins",
   fontWeight: "300",
 };

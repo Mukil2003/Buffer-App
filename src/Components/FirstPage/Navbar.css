@@ -62,7 +62,7 @@
 }
 
 .menu:hover {
-  color: rgb(107, 129, 255);
+  color: #6b81ff;
 }
 
 .dropdown-menu {
@@ -96,6 +96,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .login a {
   margin: 0 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #6b81ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.login a:hover {
+  text-decoration: underline;
 }
