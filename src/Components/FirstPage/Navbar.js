@@ -69,16 +69,24 @@ let dropDown2 = [
 ];
 
 let btnStyle = {
-  backgroundColor: "#6B81FF",
+  backgroundColor: "#2C4BFF",
   name: "Get started now",
   color: "#fff",
   padding: "15px 30px",
-  fontSize: "15px",
+  fontSize: "18px",
+};
+let btnStyleMobile = {
+  backgroundColor: "#2C4BFF",
+  name: "Get started now",
+  color: "#fff",
+  padding: "10px 20px",
+  fontSize: "14px",
 };
 
 function Navbar() {
   let [isActive, setIsActive] = useState(false);
   let [isActive2, setIsActive2] = useState(false);
+  let [toggleMenu, setToggleMenu] = useState(false);
 
   let handleClick = () => {
     setIsActive(!isActive);
@@ -88,56 +96,73 @@ function Navbar() {
     setIsActive2(!isActive2);
   };
 
+  let openMenu = () => {
+    setToggleMenu(!toggleMenu);
+  };
+
   return (
     <div className="head">
       <div className="header">
         <div className="logo">
-          <h1>
-            <i class="fa-brands fa-buffer"></i>
-            Buffer
-          </h1>
-          <div className="img-bx">
-            <img src="/images/books.png" alt="book" />
-          </div>
+          <img src="/images/logo.png" alt="logo-buffer" />
         </div>
-        <nav>
-          <ul className="navbar">
-            <li className="nav-item">
-              <div className="menu" onClick={handleClick2}>
-                Tools
-                <i class="fa-solid fa-caret-down"></i>
-              </div>
-              <div
-                className={isActive2 ? "dropdown-menu" : "hide"}
-                onClick={handleClick2}
-              >
-                {dropDown1.map((d) => {
-                  return <DropDown data={d} />;
-                })}
-              </div>
-            </li>
-            <li className="nav-item">
-              <div className="menu" onClick={handleClick}>
-                Channels
-                <i class="fa-solid fa-caret-down"></i>
-              </div>
-              <div
-                className={isActive ? "dropdown-menu2" : "hide"}
-                onClick={handleClick}
-              >
-                {dropDown2.map((d) => {
-                  return <DropDown2 data={d} />;
-                })}
-              </div>
-            </li>
-            <li className="nav-item menu">Pricing</li>
-            <li className="nav-item menu">Blog</li>
-          </ul>
-        </nav>
+        <div className={toggleMenu ? "toggle-active" : "navigation"}>
+          <nav>
+            <div className="close-bar">
+              <h1>
+                <i class="fa-brands fa-buffer"></i> Buffer
+              </h1>
 
-        <div className="login">
-          <a href="www.google.com">Log In</a>
-          <Btn contents={btnStyle} className="btn" />
+              <div className="close" onClick={openMenu}>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <ul className="navbar">
+              <li className="nav-item">
+                <div className="menu" onClick={handleClick2}>
+                  Tools
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  className={isActive2 ? "dropdown-menu" : "hide"}
+                  onClick={handleClick2}
+                >
+                  {dropDown1.map((d) => {
+                    return <DropDown data={d} />;
+                  })}
+                </div>
+              </li>
+              <li className="nav-item">
+                <div className="menu" onClick={handleClick}>
+                  Channels
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div
+                  className={isActive ? "dropdown-menu2" : "hide"}
+                  onClick={handleClick}
+                >
+                  {dropDown2.map((d) => {
+                    return <DropDown2 data={d} />;
+                  })}
+                </div>
+              </li>
+              <li className="nav-item menu">Pricing</li>
+              <li className="nav-item menu">Blog</li>
+            </ul>
+            <div className="login">
+              <a href="www.google.com">Log In</a>
+              <div className="login-btn">
+                <Btn contents={btnStyle} />
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div className="toggle">
+          <div className="btn">
+            <Btn contents={btnStyleMobile} />
+          </div>
+          <i class="fa-solid fa-bars" onClick={openMenu}></i>
         </div>
       </div>
     </div>

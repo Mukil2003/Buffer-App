@@ -4,13 +4,14 @@ let challenge = {
   color: "white",
   backgroundColor: "#6B81FF",
   width: "100%",
-  height: "50px",
+  height: "70px",
   textAlign: "center",
   fontFamily: "Roboto,sans-serif ",
   display: "flex",
   justifyContent: "center",
+  flexWrap: "wrap",
   alignItems: "center",
-  fontSize: "14px",
+  fontSize: "13px",
 };
 
 let challengeBtn = {
@@ -24,9 +25,11 @@ let challengeBtn = {
 
 let challengeRow = {
   margin: "10px",
+  lineHeight: "28px",
 };
 
 let challengeLink = {
+  fontSize: "13px",
   color: "#fff",
 };
 function Challenge() {

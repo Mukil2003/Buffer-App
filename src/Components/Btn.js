@@ -5,10 +5,10 @@ function Btn({ contents }) {
     backgroundColor: `${contents.backgroundColor}`,
     color: `${contents.color}`,
     padding: `${contents.padding}`,
-    fontFamily: "Poppins",
+    fontFamily: "Roboto",
     border: "none",
     outline: "none",
-    borderRadius: "10px",
+    borderRadius: "5px",
     fontSize: `${contents.fontSize}`,
     cursor: "pointer",
   };

@@ -7,6 +7,7 @@ let dropdown = {
   padding: "10px",
   fontFamily: "Poppins",
   fontWeight: "300",
+  cursor: "Pointer",
 };
 
 let icon = {
