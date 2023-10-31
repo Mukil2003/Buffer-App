@@ -2,6 +2,7 @@ import "./App.css";
 import Challenge from "./Components/FirstPage/Challenge";
 import Hero from "./Components/FirstPage/Hero";
 import Navbar from "./Components/FirstPage/Navbar";
+import Slider from "./Components/SecondPage/Slider";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Challenge />
       <Navbar />
       <Hero />
+      <Slider />
     </div>
   );
 }
