@@ -3,6 +3,7 @@ import Challenge from "./Components/FirstPage/Challenge";
 import Hero from "./Components/FirstPage/Hero";
 import Navbar from "./Components/FirstPage/Navbar";
 import Slider from "./Components/SecondPage/Slider";
+import About from "./Components/ThirdPage/About";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Slider />
+      <About />
     </div>
   );
 }
