@@ -90,10 +90,12 @@ function Navbar() {
 
   let handleClick = () => {
     setIsActive(!isActive);
+    setIsActive2(false);
   };
 
   let handleClick2 = () => {
     setIsActive2(!isActive2);
+    setIsActive(false);
   };
 
   let openMenu = () => {
