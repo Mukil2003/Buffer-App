@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  margin: 40px 80px;
+  padding: 10px 70px;
+  text-align: center;
+}
+
+.about-header h1 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.about-header p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding: 0 200px;
+  line-height: 35px;
+}
+
+.about-item {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 30px;
+  width: 100%;
+}
+
+.about-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 45%;
+  padding: 10px 50px;
+}
+
+.about-item-content > h3,
+h2,
+p {
+  margin: 20px 0;
+}
+
+.about-item-content h3 {
+  color: #2c4bff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.about-item-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.about-item-content p {
+  font-family: "Roboto", sans-serif;
+}
+
+.about-item-img {
+  margin: 10px 40px;
+  width: 55%;
+  padding: 0 50px;
+}
+
+.about-item-img img {
+  width: 100%;
+  height: 100%;
+}
