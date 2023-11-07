@@ -2,6 +2,7 @@ import "./App.css";
 import Challenge from "./Components/FirstPage/Challenge";
 import Hero from "./Components/FirstPage/Hero";
 import Navbar from "./Components/FirstPage/Navbar";
+import Testimonials from "./Components/FourthPage/Testimonials";
 import Slider from "./Components/SecondPage/Slider";
 import About from "./Components/ThirdPage/About";
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Slider />
       <About />
+      <Testimonials />
     </div>
   );
 }
