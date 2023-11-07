@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testimonials {
+  width: 100%;
+}
+
+.popularity {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.popularity-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #2c4bff;
+}
+
+.popularity-box p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
