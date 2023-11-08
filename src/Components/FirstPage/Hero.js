@@ -8,6 +8,7 @@ let btnStyle = {
   name: "Get Started Now",
   padding: "15px 30px",
   fontSize: "18px",
+  border: "none",
 };
 
 function Hero() {

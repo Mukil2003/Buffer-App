@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import DropDown from "./DropDown";
 import DropDown2 from "./DropDown2";
@@ -74,6 +74,7 @@ let btnStyle = {
   color: "#fff",
   padding: "15px 30px",
   fontSize: "18px",
+  border: "none",
 };
 let btnStyleMobile = {
   backgroundColor: "#2C4BFF",
@@ -101,6 +102,8 @@ function Navbar() {
   let openMenu = () => {
     setToggleMenu(!toggleMenu);
   };
+
+  useEffect(() => {});
 
   return (
     <div className="head">
