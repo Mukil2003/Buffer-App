@@ -1,4 +1,5 @@
 import "./App.css";
+import Help from "./Components/FifthPage/Help";
 import Challenge from "./Components/FirstPage/Challenge";
 import Hero from "./Components/FirstPage/Hero";
 import Navbar from "./Components/FirstPage/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <Slider />
       <About />
       <Testimonials />
+      <Help />
     </div>
   );
 }
