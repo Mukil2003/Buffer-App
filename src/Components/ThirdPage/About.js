@@ -14,6 +14,7 @@ let aboutItems = [
     backgroundColor: "#2C4BFF",
     padding: "15px 35px",
     fontSize: "18px",
+    border: "none",
   },
   {
     title: "2. BUILD AN ENGAGED AUDIENCE",
@@ -26,6 +27,7 @@ let aboutItems = [
     backgroundColor: "#2C4BFF",
     padding: "15px 35px",
     fontSize: "18px",
+    border: "none",
   },
   {
     title: "3. SAVE TONS OF TIME",
@@ -38,6 +40,7 @@ let aboutItems = [
     backgroundColor: "#2C4BFF",
     padding: "15px 35px",
     fontSize: "18px",
+    border: "none",
   },
   {
     title: "4. COORDINATE WITH EASE",
@@ -50,6 +53,7 @@ let aboutItems = [
     backgroundColor: "#2C4BFF",
     padding: "15px 35px",
     fontSize: "18px",
+    border: "none",
   },
 ];
 
