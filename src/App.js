@@ -3,8 +3,10 @@ import Help from "./Components/FifthPage/Help";
 import Challenge from "./Components/FirstPage/Challenge";
 import Hero from "./Components/FirstPage/Hero";
 import Navbar from "./Components/FirstPage/Navbar";
+import Footer from "./Components/Footer/Footer";
 import Testimonials from "./Components/FourthPage/Testimonials";
 import Slider from "./Components/SecondPage/Slider";
+import Banner from "./Components/SixthPage/Banner";
 import About from "./Components/ThirdPage/About";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <About />
       <Testimonials />
       <Help />
+      <Banner />
+      <Footer />
     </div>
   );
 }

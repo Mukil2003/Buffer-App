@@ -68,3 +68,30 @@
   width: 100%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 990px) {
+  .help-1 {
+    padding: 30px 20px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .help-head {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .help-img {
+    width: 100%;
+    margin: 40px auto 10px;
+  }
+
+  .help-img-bx {
+    flex-direction: column;
+  }
+
+  .help-bx {
+    margin: 10px auto;
+  }
+}

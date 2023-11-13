@@ -15,7 +15,10 @@ function Btn({ contents }) {
 
   return (
     <div>
-      <button style={styles}>{contents.name}</button>
+      <button style={styles}>
+        <i style={{ margin: "0 10px 0 0" }} className={contents.icon}></i>
+        {contents.name}
+      </button>
     </div>
   );
 }

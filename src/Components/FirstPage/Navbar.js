@@ -82,6 +82,7 @@ let btnStyleMobile = {
   color: "#fff",
   padding: "10px 20px",
   fontSize: "14px",
+  border: "none",
 };
 
 function Navbar() {

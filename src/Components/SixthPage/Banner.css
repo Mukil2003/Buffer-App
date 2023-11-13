@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2c4bff;
+  width: 100%;
+}
+
+.banner h1 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 70px;
+}
+
+.banner-btn {
+  margin: 20px auto 40px;
+}

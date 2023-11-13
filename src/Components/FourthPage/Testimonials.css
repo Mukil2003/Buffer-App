@@ -25,3 +25,9 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
 }
+
+@media screen and (max-width: 990px) {
+  .popularity {
+    flex-direction: column;
+  }
+}
